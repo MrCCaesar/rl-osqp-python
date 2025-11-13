@@ -27,8 +27,9 @@ message(STATUS "Fetching/configuring OSQP")
 list(APPEND CMAKE_MESSAGE_INDENT "  ")
 FetchContent_Declare(
   osqp
-  GIT_REPOSITORY https://github.com/osqp/osqp.git
-  GIT_TAG v1.0.0
+  SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/rl-osqp
+#   GIT_REPOSITORY https://github.com/MrCCaesar/osqp.git
+#   GIT_TAG c3400dbf66e81b9afaa1322a22aa539bfd6698e9
 )
 list(POP_BACK CMAKE_MESSAGE_INDENT)
 FetchContent_MakeAvailable(osqp)

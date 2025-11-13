@@ -1,5 +1,5 @@
 [build-system]
-requires = ["scikit-build-core", "pybind11"]
+requires = ["scikit-build-core", "pybind11", "torch>=2.7"]
 build-backend = "scikit_build_core.build"
 
 [project]
@@ -21,6 +21,7 @@ dependencies = [
     "scipy>=0.13.2",
     "setuptools",
     "joblib",
+    "torch>=2.7"
 ]
 
 [project.urls]
